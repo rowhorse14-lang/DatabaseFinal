@@ -1,0 +1,13 @@
+CREATE TABLE PROFESSOR (
+  Professor_ID int PRIMARY KEY,
+  First_Name VARCHAR2(20) NOT NULL,
+  Last_Name VARCHAR2(20) NOT NULL,
+  email VARCHAR2(50) NOT NULL,
+  dept VARCHAR2(10) NOT NULL
+);
+
+-- insert
+INSERT INTO PROFESSOR VALUES (1563, 'David', 'Jones', 'DJones02@villanova.edu', 'Psychology');
+
+-- fetch 
+SELECT * FROM PROFESSOR;
