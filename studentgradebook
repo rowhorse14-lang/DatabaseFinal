@@ -1,0 +1,14 @@
+-- create
+CREATE TABLE EMPLOYEE (
+  empId NUMBER PRIMARY KEY,
+  name VARCHAR2(15) NOT NULL,
+  dept VARCHAR2(10) NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (1563, 'David', 'Jones', '' );
+INSERT INTO EMPLOYEE VALUES (2, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (3, 'Ava', 'Sales');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE dept = 'Sales';
