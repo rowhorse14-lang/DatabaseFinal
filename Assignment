@@ -1,0 +1,10 @@
+CREATE TABLE Assignment (
+    assignment_id INT PRIMARY KEY,
+    category_id INT NOT NULL,
+    assignment_name VARCHAR(40) NOT NULL,
+    max_points DECIMAL(6,2) CHECK (max_points > 0),
+    due_date DATE,
+    description TEXT,
+
+    FOREIGN KEY (category_id) REFERENCES Grade_Category(category_id)
+);
