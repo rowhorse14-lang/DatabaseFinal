@@ -1,17 +1,6 @@
-CREATE TABLE COURSE (
-  Course_ID int PRIMARY KEY,
-  Professor_ID int NOT NULL REFERENCES PROFESSOR(Professor_ID), 
-  Department VARCHAR2(20) NOT NULL,
-  Course_number VARCHAR2(8) NOT NULL,
-  Course_name VARCHAR2(50) NOT NULL,
-  Semester VARCHAR2(25) NOT NULL,
-  Year int NOT NULL
-);
+-- INSERT: COURSES (MAX 3)
 
 -- insert
 INSERT INTO COURSE VALUES (101, 1563, 'Psychology', 'PSY101', 'Introduction to Psychology', 'Spring', 2026);
 INSERT INTO COURSE VALUES (188, 1563, 'Psychology', 'PSYLNG', 'Psychology of Language', 'Spring', 2026);
 INSERT INTO COURSE VALUES (411, 1563, 'Psychology', 'PSYANM', 'Animal Psychology', 'Spring', 2026);
-
--- fetch 
-SELECT * FROM COURSE;

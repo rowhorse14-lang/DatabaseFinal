@@ -1,10 +1,6 @@
-CREATE TABLE Student (
-    student_id INT PRIMARY KEY,
-    first_name VARCHAR(20) NOT NULL,
-    last_name VARCHAR(20) NOT NULL,
-    email VARCHAR(20) UNIQUE NOT NULL,
-    major VARCHAR(20)
-);
+-- =============================
+-- INSERT: STUDENTS 
+-- =============================
 
 INSERT INTO Student VALUES (8, 'Faith', 'Widgins-Brown', 'fwidgins@villanova.edu', 'Sociology');
 INSERT INTO Student VALUES (6, 'Umu', 'Diallo', 'udiallo@villanova.edu', 'Comprehensive Science');

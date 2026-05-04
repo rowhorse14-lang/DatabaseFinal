@@ -6,8 +6,5 @@ CREATE TABLE PROFESSOR (
   dept VARCHAR2(10) NOT NULL
 );
 
--- insert
-INSERT INTO PROFESSOR VALUES (1563, 'David', 'Jones', 'DJones02@villanova.edu', 'Psychology');
-
 -- fetch 
 SELECT * FROM PROFESSOR;
